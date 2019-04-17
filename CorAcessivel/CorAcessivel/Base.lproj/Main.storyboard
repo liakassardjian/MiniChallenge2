@@ -36,9 +36,9 @@
                                                 <color key="textColor" red="0.52941176470588236" green="0.52941176470588236" blue="0.52941176470588236" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7K-yy-Rhd">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B7K-yy-Rhd" customClass="ColorView" customModule="CorAcessivel" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="38" width="90" height="90"/>
-                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="UhY-s0-5EZ"/>
                                                     <constraint firstAttribute="height" constant="90" id="cBE-VM-SAi"/>
@@ -82,7 +82,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="lpd-WM-1Oa">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1u-HR-2dO">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U1u-HR-2dO" customClass="ColorView" customModule="CorAcessivel" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -101,7 +101,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="brf-7T-MCi">
                                                 <rect key="frame" x="125" y="0.0" width="90" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-Yg-Hh1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eQw-Yg-Hh1" customClass="ColorView" customModule="CorAcessivel" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -120,7 +120,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="gKX-N6-3Vh">
                                                 <rect key="frame" x="250" y="0.0" width="90" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEF-hL-vzm">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEF-hL-vzm" customClass="ColorView" customModule="CorAcessivel" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -168,7 +168,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="akC-lS-Oro">
                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7j-E0-aMw">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7j-E0-aMw" customClass="ColorView" customModule="CorAcessivel" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -187,7 +187,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="nuk-dB-pwX">
                                                 <rect key="frame" x="125" y="0.0" width="90" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohw-Dk-pVC">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ohw-Dk-pVC" customClass="ColorView" customModule="CorAcessivel" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -206,7 +206,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="yPj-Pp-ZtQ">
                                                 <rect key="frame" x="250" y="0.0" width="90" height="128"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Soa-Lz-4qO">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Soa-Lz-4qO" customClass="ColorView" customModule="CorAcessivel" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -246,8 +246,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="corDaltonico1View" destination="T7j-E0-aMw" id="9Y6-4h-prO"/>
+                        <outlet property="corDaltonico2View" destination="ohw-Dk-pVC" id="M0q-UU-D1Y"/>
+                        <outlet property="corDaltonico3View" destination="Soa-Lz-4qO" id="ac1-q7-sRC"/>
+                        <outlet property="corHarmonizacao1View" destination="U1u-HR-2dO" id="jxs-vF-S3x"/>
+                        <outlet property="corHarmonizacao2View" destination="eQw-Yg-Hh1" id="Icc-CP-TBx"/>
+                        <outlet property="corHarmonizacao3View" destination="jEF-hL-vzm" id="O7i-f9-9KM"/>
                         <outlet property="corMediaStackView" destination="oRA-YA-lUS" id="OHs-rd-BeH"/>
-                        <outlet property="corMediaView" destination="B7K-yy-Rhd" id="KHg-fd-6kh"/>
+                        <outlet property="corMediaView" destination="B7K-yy-Rhd" id="xfu-ZI-r7h"/>
+                        <outlet property="daltonismoStackView" destination="2az-Sb-dAS" id="Lge-hX-O2k"/>
+                        <outlet property="daltonismoTextField" destination="TPx-Hq-Vr6" id="wGB-DJ-gXX"/>
+                        <outlet property="harmonizacaoStackView" destination="PeF-fI-UJ5" id="WcM-Yl-4Pb"/>
+                        <outlet property="harmonizacaoTextField" destination="vwR-5z-TkR" id="crD-dA-dtj"/>
                         <outlet property="selectImageView" destination="JVb-z8-8Yj" id="Jsf-Hy-wBJ"/>
                     </connections>
                 </viewController>
