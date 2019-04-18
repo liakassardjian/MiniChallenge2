@@ -25,15 +25,15 @@ class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigatio
         pickImageCallback = callback;
         self.viewController = viewController;
         
-        let cameraAction = UIAlertAction(title: "Camera", style: .default){
+        let cameraAction = UIAlertAction(title: "Câmera", style: .default){
             UIAlertAction in
             self.openCamera()
         }
-        let gallaryAction = UIAlertAction(title: "Gallary", style: .default){
+        let gallaryAction = UIAlertAction(title: "Galeria", style: .default){
             UIAlertAction in
             self.openGallery()
         }
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel){
+        let cancelAction = UIAlertAction(title: "Cancelar", style: .cancel){
             UIAlertAction in
         }
         
@@ -51,7 +51,7 @@ class ImagePickerManager: NSObject, UIImagePickerControllerDelegate, UINavigatio
             picker.sourceType = .camera
             self.viewController!.present(picker, animated: true, completion: nil)
         } else {
-            let alertWarning = UIAlertView(title:"Warning", message: "You don't have camera", delegate:nil, cancelButtonTitle:"OK", otherButtonTitles:"")
+            let alertWarning = UIAlertView(title:"Warning", message: "You don't have camera", delegate:nil, cancelButtonTitle:"OK")
             alertWarning.show()
         }
     }

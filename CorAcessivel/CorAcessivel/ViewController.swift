@@ -12,7 +12,6 @@ enum EstadoView {
     case selecionarImagem
     case selecionarHarmonizacao
     case selecionouHarmonizacao
-    case selecionarDaltonismo
     case selecionouDaltonismo
 }
 
@@ -46,6 +45,8 @@ class ViewController: UIViewController {
         self.imageTap()
         setupTextField()
         setupPickerView()
+        setupViewTap()
+        setupImage()
     }
     
     func updateView() {
@@ -64,9 +65,6 @@ class ViewController: UIViewController {
         case .selecionouHarmonizacao:
             self.corHarmonizacaoStackView.isHidden = false
             self.daltonismoStackView.isHidden = false
-
-        case .selecionarDaltonismo:
-            self.daltonismoStackView.isHidden = false
             
         case .selecionouDaltonismo:
             self.corDaltonicoStackView.isHidden = false
@@ -78,13 +76,26 @@ class ViewController: UIViewController {
         self.selectImageView.addGestureRecognizer(tap)
     }
     
+    func setupViewTap() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dissmissPicker))
+        self.view.addGestureRecognizer(tap)
+    }
+    
+    func setupImage() {
+        self.selectImageView.layer.cornerRadius = 8
+    }
+    
     @objc func didTapImage() {
         ImagePickerManager().pickImage(self){ foto in
             self.selectImageView.image = foto
             self.estado = .selecionarHarmonizacao
             self.updateView()
-            
         }
+    }
+    
+    @objc func dissmissPicker() {
+        self.harmonizacaoTextField.endEditing(true)
+        self.daltonismoTextField.endEditing(true)
     }
     
     func setupTextField() {
@@ -124,12 +135,11 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         if harmonizacaoTextField.isFirstResponder {
             self.harmonizacaoTextField.text = tiposHarmonizacao[row]
             estado = .selecionouHarmonizacao
-            self.updateView()
         } else {
             self.daltonismoTextField.text = tiposDaltonismo[row]
             estado = .selecionouDaltonismo
-            self.updateView()
         }
+        self.updateView()
         self.harmonizacaoTextField.endEditing(true)
         self.daltonismoTextField.endEditing(true)
     }
