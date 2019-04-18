@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_image" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-z8-8Yj">
-                                <rect key="frame" x="24" y="61" width="366" height="169.00000000000006"/>
+                                <rect key="frame" x="24" y="61" width="366" height="169"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="yKw-D4-8L7"/>
                                 </constraints>
@@ -249,9 +249,11 @@
                         <outlet property="corDaltonico1View" destination="T7j-E0-aMw" id="9Y6-4h-prO"/>
                         <outlet property="corDaltonico2View" destination="ohw-Dk-pVC" id="M0q-UU-D1Y"/>
                         <outlet property="corDaltonico3View" destination="Soa-Lz-4qO" id="ac1-q7-sRC"/>
+                        <outlet property="corDaltonicoStackView" destination="vHt-wO-Gv9" id="Zqg-53-N1G"/>
                         <outlet property="corHarmonizacao1View" destination="U1u-HR-2dO" id="jxs-vF-S3x"/>
                         <outlet property="corHarmonizacao2View" destination="eQw-Yg-Hh1" id="Icc-CP-TBx"/>
                         <outlet property="corHarmonizacao3View" destination="jEF-hL-vzm" id="O7i-f9-9KM"/>
+                        <outlet property="corHarmonizacaoStackView" destination="6UV-7N-srf" id="IKt-Vz-DwG"/>
                         <outlet property="corMediaStackView" destination="oRA-YA-lUS" id="OHs-rd-BeH"/>
                         <outlet property="corMediaView" destination="B7K-yy-Rhd" id="xfu-ZI-r7h"/>
                         <outlet property="daltonismoStackView" destination="2az-Sb-dAS" id="Lge-hX-O2k"/>

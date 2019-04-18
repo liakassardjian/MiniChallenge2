@@ -8,6 +8,14 @@
 
 import UIKit
 
+enum EstadoView {
+    case selecionarImagem
+    case selecionarHarmonizacao
+    case selecionouHarmonizacao
+    case selecionarDaltonismo
+    case selecionouDaltonismo
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var selectImageView: UIImageView!
@@ -15,23 +23,47 @@ class ViewController: UIViewController {
     @IBOutlet weak var corMediaView: ColorView!
     @IBOutlet weak var harmonizacaoStackView: UIStackView!
     @IBOutlet weak var harmonizacaoTextField: UITextField!
+    @IBOutlet weak var corHarmonizacaoStackView: UIStackView!
     @IBOutlet weak var corHarmonizacao1View: ColorView!
     @IBOutlet weak var corHarmonizacao2View: ColorView!
     @IBOutlet weak var corHarmonizacao3View: ColorView!
     @IBOutlet weak var daltonismoStackView: UIStackView!
     @IBOutlet weak var daltonismoTextField: UITextField!
+    @IBOutlet weak var corDaltonicoStackView: UIStackView!
     @IBOutlet weak var corDaltonico1View: ColorView!
     @IBOutlet weak var corDaltonico2View: ColorView!
     @IBOutlet weak var corDaltonico3View: ColorView!
     
-    
+    var estado: EstadoView = .selecionarImagem
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.updateView()
     }
-
     
+    func updateView() {
+        switch estado {
+        case .selecionarImagem:
+            self.corMediaStackView.isHidden = true
+            self.harmonizacaoStackView.isHidden = true
+            self.corHarmonizacaoStackView.isHidden = true
+            self.daltonismoStackView.isHidden = true
+            self.corDaltonicoStackView.isHidden = true
+            
+        case .selecionarHarmonizacao:
+            self.corMediaStackView.isHidden = false
+            self.harmonizacaoStackView.isHidden = false
+            
+        case .selecionouHarmonizacao:
+            self.corHarmonizacaoStackView.isHidden = false
+            
+        case .selecionarDaltonismo:
+            self.daltonismoStackView.isHidden = false
+            
+        case .selecionouDaltonismo:
+            self.corDaltonicoStackView.isHidden = false
+        }
+    }
 
 }
 
