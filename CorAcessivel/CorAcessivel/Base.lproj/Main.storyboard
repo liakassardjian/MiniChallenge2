@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_image" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-z8-8Yj">
-                                <rect key="frame" x="24" y="61" width="366" height="169"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_image" translatesAutoresizingMaskIntoConstraints="NO" id="JVb-z8-8Yj">
+                                <rect key="frame" x="24" y="61" width="366" height="169.00000000000006"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="169" id="yKw-D4-8L7"/>
                                 </constraints>

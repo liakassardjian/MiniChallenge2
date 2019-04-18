@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B67B6382268E5A900BA9DF8 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67B6372268E5A900BA9DF8 /* ImagePickerManager.swift */; };
 		3BAA8F3E2267B7BC00605B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA8F3D2267B7BC00605B92 /* AppDelegate.swift */; };
 		3BAA8F402267B7BC00605B92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA8F3F2267B7BC00605B92 /* ViewController.swift */; };
 		3BAA8F432267B7BC00605B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAA8F412267B7BC00605B92 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B67B6372268E5A900BA9DF8 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		3BAA8F3A2267B7BC00605B92 /* CorAcessivel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorAcessivel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAA8F3D2267B7BC00605B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BAA8F3F2267B7BC00605B92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				3BAA8F462267B7BE00605B92 /* LaunchScreen.storyboard */,
 				3BAA8F492267B7BE00605B92 /* Info.plist */,
 				3BAA8F4F2267C32F00605B92 /* ColorView.swift */,
+				3B67B6372268E5A900BA9DF8 /* ImagePickerManager.swift */,
 			);
 			path = CorAcessivel;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				3BAA8F502267C32F00605B92 /* ColorView.swift in Sources */,
 				3BAA8F402267B7BC00605B92 /* ViewController.swift in Sources */,
 				3BAA8F3E2267B7BC00605B92 /* AppDelegate.swift in Sources */,
+				3B67B6382268E5A900BA9DF8 /* ImagePickerManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

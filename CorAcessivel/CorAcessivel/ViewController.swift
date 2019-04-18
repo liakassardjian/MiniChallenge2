@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.updateView()
+        self.imageTap()
     }
     
     func updateView() {
@@ -64,6 +65,21 @@ class ViewController: UIViewController {
             self.corDaltonicoStackView.isHidden = false
         }
     }
+    
+    func imageTap() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(didTapImage))
+        self.selectImageView.addGestureRecognizer(tap)
+    }
+    
+    @objc func didTapImage() {
+        ImagePickerManager().pickImage(self){ foto in
+            self.selectImageView.image = foto
+            self.estado = .selecionarHarmonizacao
+            self.updateView()
+            
+        }
+    }
+    
 
 }
 
