@@ -33,6 +33,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var corDaltonico1View: ColorView!
     @IBOutlet weak var corDaltonico2View: ColorView!
     @IBOutlet weak var corDaltonico3View: ColorView!
+
+    let pickerView = UIPickerView()
+    let tiposHarmonizacao = ["Complementar", "Monocromático", "Análogo", "Triádico", "Tetrádico"]
+    let tiposDaltonismo = ["Deuteranopia", "Protanopia", "Tritanopia"]
     
     var estado: EstadoView = .selecionarImagem
     
@@ -40,6 +44,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.updateView()
         self.imageTap()
+        setupTextField()
+        setupPickerView()
     }
     
     func updateView() {
@@ -57,7 +63,8 @@ class ViewController: UIViewController {
             
         case .selecionouHarmonizacao:
             self.corHarmonizacaoStackView.isHidden = false
-            
+            self.daltonismoStackView.isHidden = false
+
         case .selecionarDaltonismo:
             self.daltonismoStackView.isHidden = false
             
@@ -80,6 +87,50 @@ class ViewController: UIViewController {
         }
     }
     
-
+    func setupTextField() {
+        harmonizacaoTextField.inputView = pickerView
+        daltonismoTextField.inputView = pickerView
+    }
+    
+    func setupPickerView() {
+        self.pickerView.delegate = self
+        self.pickerView.dataSource = self
+    }
 }
 
+extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if harmonizacaoTextField.isFirstResponder {
+            return tiposHarmonizacao.count
+        } else {
+            return tiposDaltonismo.count
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if harmonizacaoTextField.isFirstResponder {
+            return tiposHarmonizacao[row]
+        } else {
+            return tiposDaltonismo[row]
+        }
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if harmonizacaoTextField.isFirstResponder {
+            self.harmonizacaoTextField.text = tiposHarmonizacao[row]
+            estado = .selecionouHarmonizacao
+            self.updateView()
+        } else {
+            self.daltonismoTextField.text = tiposDaltonismo[row]
+            estado = .selecionouDaltonismo
+            self.updateView()
+        }
+        self.harmonizacaoTextField.endEditing(true)
+        self.daltonismoTextField.endEditing(true)
+    }
+}
