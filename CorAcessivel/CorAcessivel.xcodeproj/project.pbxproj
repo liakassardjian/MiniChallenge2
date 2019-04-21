@@ -10,6 +10,7 @@
 		3B67B6382268E5A900BA9DF8 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67B6372268E5A900BA9DF8 /* ImagePickerManager.swift */; };
 		3B67B63A22690C9500BA9DF8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67B63922690C9500BA9DF8 /* CustomButton.swift */; };
 		3B67B63C226915DF00BA9DF8 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67B63B226915DF00BA9DF8 /* CustomView.swift */; };
+		3B67B63E226A6B6300BA9DF8 /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B67B63D226A6B6300BA9DF8 /* ModalViewController.swift */; };
 		3BAA8F3E2267B7BC00605B92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA8F3D2267B7BC00605B92 /* AppDelegate.swift */; };
 		3BAA8F402267B7BC00605B92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA8F3F2267B7BC00605B92 /* ViewController.swift */; };
 		3BAA8F432267B7BC00605B92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAA8F412267B7BC00605B92 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 		3B67B6372268E5A900BA9DF8 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		3B67B63922690C9500BA9DF8 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		3B67B63B226915DF00BA9DF8 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		3B67B63D226A6B6300BA9DF8 /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
 		3BAA8F3A2267B7BC00605B92 /* CorAcessivel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CorAcessivel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BAA8F3D2267B7BC00605B92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BAA8F3F2267B7BC00605B92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				3B67B6372268E5A900BA9DF8 /* ImagePickerManager.swift */,
 				3B67B63922690C9500BA9DF8 /* CustomButton.swift */,
 				3B67B63B226915DF00BA9DF8 /* CustomView.swift */,
+				3B67B63D226A6B6300BA9DF8 /* ModalViewController.swift */,
 			);
 			path = CorAcessivel;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				3B67B63C226915DF00BA9DF8 /* CustomView.swift in Sources */,
 				3B67B6382268E5A900BA9DF8 /* ImagePickerManager.swift in Sources */,
 				3B67B63A22690C9500BA9DF8 /* CustomButton.swift in Sources */,
+				3B67B63E226A6B6300BA9DF8 /* ModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

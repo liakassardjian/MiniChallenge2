@@ -82,13 +82,20 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-ek-Skm">
-                                                <rect key="frame" x="328" y="8.5" width="25" height="25"/>
+                                                <rect key="frame" x="328" y="9" width="25" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="elF-Hr-bEn"/>
+                                                </constraints>
                                                 <state key="normal" image="?"/>
                                                 <connections>
-                                                    <segue destination="Ff7-HH-E6k" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="YCM-rE-Afe"/>
+                                                    <action selector="aboutHarmonizacaoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jlb-WL-Gqs"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="PeF-fI-UJ5" firstAttribute="top" secondItem="vGr-YQ-wFR" secondAttribute="top" id="bv3-K7-AXG"/>
+                                            <constraint firstItem="dRJ-ek-Skm" firstAttribute="top" secondItem="vGr-YQ-wFR" secondAttribute="top" constant="9" id="onl-dT-zZb"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="6UV-7N-srf">
                                         <rect key="frame" x="30" y="225" width="314" height="110.5"/>
@@ -180,13 +187,22 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-KJ-DHj">
-                                                <rect key="frame" x="349" y="8.5" width="25" height="25"/>
+                                                <rect key="frame" x="349" y="9" width="25" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="C9J-NM-dfE"/>
+                                                </constraints>
                                                 <state key="normal" image="?"/>
                                                 <connections>
-                                                    <segue destination="v8l-do-ayF" kind="presentation" id="iwN-d2-Bos"/>
+                                                    <action selector="aboutDaltonismoTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPK-Gk-HhU"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2az-Sb-dAS" firstAttribute="top" secondItem="edp-rC-KXs" secondAttribute="top" id="2Ov-zn-su8"/>
+                                            <constraint firstItem="2az-Sb-dAS" firstAttribute="leading" secondItem="edp-rC-KXs" secondAttribute="leading" id="Ce7-Zv-faa"/>
+                                            <constraint firstItem="Dhz-KJ-DHj" firstAttribute="top" secondItem="edp-rC-KXs" secondAttribute="top" constant="9" id="P4g-7C-kTc"/>
+                                            <constraint firstItem="Dhz-KJ-DHj" firstAttribute="leading" secondItem="2az-Sb-dAS" secondAttribute="trailing" constant="21" id="qLT-wn-I8c"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="vHt-wO-Gv9">
                                         <rect key="frame" x="32" y="419.5" width="310" height="110.5"/>
@@ -251,6 +267,12 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vGr-YQ-wFR" secondAttribute="trailing" constant="10.5" id="fXM-I6-c3Y"/>
+                                    <constraint firstItem="vGr-YQ-wFR" firstAttribute="leading" secondItem="DLG-Wj-A6E" secondAttribute="leading" constant="10.5" id="imT-hu-Blh"/>
+                                    <constraint firstAttribute="trailing" secondItem="edp-rC-KXs" secondAttribute="trailing" id="nV4-ML-QuG"/>
+                                    <constraint firstItem="edp-rC-KXs" firstAttribute="leading" secondItem="DLG-Wj-A6E" secondAttribute="leading" id="t7W-7c-lpX"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549019602" green="0.98431372549019602" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -282,16 +304,18 @@
                         <outlet property="harmonizacaoStackView" destination="PeF-fI-UJ5" id="WcM-Yl-4Pb"/>
                         <outlet property="harmonizacaoTextField" destination="vwR-5z-TkR" id="crD-dA-dtj"/>
                         <outlet property="selectImageView" destination="JVb-z8-8Yj" id="Jsf-Hy-wBJ"/>
+                        <outlet property="sobreDaltonismoButton" destination="Dhz-KJ-DHj" id="tNh-Tw-Mha"/>
+                        <outlet property="sobreHarmonizacaoButton" destination="dRJ-ek-Skm" id="NKk-jR-2gW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="957.97101449275374" y="20.758928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Modal View Controller-->
         <scene sceneID="FLO-DV-2xq">
             <objects>
-                <viewController id="Ff7-HH-E6k" sceneMemberID="viewController">
+                <viewController restorationIdentifier="teste" storyboardIdentifier="teste" id="Ff7-HH-E6k" customClass="ModalViewController" customModule="CorAcessivel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hH-Y8-2e1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -459,6 +483,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="onE-sn-Ejl"/>
                     </view>
+                    <connections>
+                        <outlet property="backView" destination="ggG-Lo-JkU" id="tRt-2b-no2"/>
+                        <outlet property="descLabel" destination="ezV-L9-Vlh" id="8z5-28-UM3"/>
+                        <outlet property="titleLabel" destination="KP9-Cx-n5o" id="6hf-S1-CMv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RNC-Eh-POL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -563,93 +592,201 @@
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="500"/>
                                         <subviews>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="crI-FH-Ncz" customClass="CustomView" customModule="CorAcessivel" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="300" height="602.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="570"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harmonização" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSB-qV-Mj3">
-                                                        <rect key="frame" x="32" y="32" width="158" height="29"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daltonismo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSB-qV-Mj3">
+                                                        <rect key="frame" x="32" y="32" width="124" height="29"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-KI-Xsa">
-                                                        <rect key="frame" x="8" y="85" width="284" height="509.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-KI-Xsa">
+                                                        <rect key="frame" x="8" y="85" width="284" height="477"/>
                                                         <attributedString key="attributedText">
                                                             <fragment>
-                                                                <string key="content"> Uma roda de cores, ou círculo cromático, permite uma melhor análise da combinação de tons, e, consequentemente, garante uma harmonia entre elas.  Existem vários tipos de harmonia, tal que os mais comuns são:  Complementar, Monocromático, Análogo, Triádico e Tetrádico. 
-     
+                                                                <string key="content">O daltonismo é um tipo de deficiência visual em que o indivíduo não é capaz de reconhecer e diferenciar algumas cores específicas. Existem três tipos principais de daltonismo: Protanopia, Deuteranopia e Tritanopia.
 
-- </string>
+</string>
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Complementar">
-                                                                <attributes>
-                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment>
-                                                                <string key="content">: É a harmonia que ocorre quando combinamos cores opostas na roda das cores.
-- </string>
-                                                                <attributes>
-                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Monocromático">
-                                                                <attributes>
-                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops/>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <real key="NSStrokeWidth" value="0.0"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
-                                                                <string key="content">: É a harmonia resultante de uma mesma cor da roda das cores.
-- </string>
+                                                                <string key="content">	•	</string>
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
                                                                 </attributes>
                                                             </fragment>
-                                                            <fragment content="Análogo">
+                                                            <fragment content="Protanopia">
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <real key="NSStrokeWidth" value="0.0"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
-                                                                <string key="content">: é formado de uma cor primária combinada com duas cores vizinhas na roda das cores. 
-- </string>
+                                                                <string key="content">: é o mais comum de todos e é caracterizado, principalmente, pela diminuição ou ausência total do pigmento vermelho. 
+</string>
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
-                                                                </attributes>
-                                                            </fragment>
-                                                            <fragment content="Triádico">
-                                                                <attributes>
-                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <real key="NSStrokeWidth" value="0.0"/>
                                                                 </attributes>
                                                             </fragment>
                                                             <fragment>
-                                                                <string key="content">: É a harmonia onde usamos três cores equidistantes no circulo cromático.
-- </string>
+                                                                <string key="content">	•	</string>
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
                                                                 </attributes>
                                                             </fragment>
-                                                            <fragment content="Tetrádico">
+                                                            <fragment content="Deuteranopia">
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                                     <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <real key="NSStrokeWidth" value="0.0"/>
                                                                 </attributes>
                                                             </fragment>
-                                                            <fragment content=": harmonias com dois pares de cores complementares.">
+                                                            <fragment>
+                                                                <string key="content">: não é capaz de distinguir a cor verde. Mas, da mesma forma que ocorre com a protanopia, os tons vistos geralmente são puxados para o marrom. 
+</string>
                                                                 <attributes>
                                                                     <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                                    <font key="NSFont" size="17" name=".AppleSystemUIFont"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">	•	</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment content="Tritanopia">
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <real key="NSStrokeWidth" value="0.0"/>
+                                                                </attributes>
+                                                            </fragment>
+                                                            <fragment>
+                                                                <string key="content">: é o tipo mais raro de daltonismo. Ela interfere na distinção e reconhecimento das cores azul e amarelo.
+</string>
+                                                                <attributes>
+                                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                                    <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                                                    <real key="NSKern" value="0.0"/>
+                                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" headIndent="36" minimumLineHeight="14" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                                        <tabStops>
+                                                                            <textTab alignment="left" location="11">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                            <textTab alignment="natural" location="36">
+                                                                                <options/>
+                                                                            </textTab>
+                                                                        </tabStops>
+                                                                    </paragraphStyle>
+                                                                    <color key="NSStrokeColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <real key="NSStrokeWidth" value="0.0"/>
                                                                 </attributes>
                                                             </fragment>
                                                         </attributedString>
